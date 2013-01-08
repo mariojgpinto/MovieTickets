@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MovieTicketsClass</class>
+ <widget class="QMainWindow" name="MovieTicketsClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>669</width>
+    <height>533</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MovieTickets</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>651</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Add Movies</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>341</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>339</width>
+         <height>439</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>46</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Director:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>46</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Year:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>46</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Title:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="add_director_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>321</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="add_title_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>321</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="add_duration_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>130</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>110</y>
+          <width>46</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Duration:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>110</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>IMDB Rating:</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="add_rating_doubleSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>130</y>
+          <width>71</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="decimals">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <double>10.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+        <property name="value">
+         <double>5.000000000000000</double>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="add_visualization_dateEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>190</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="date">
+         <date>
+          <year>2012</year>
+          <month>1</month>
+          <day>1</day>
+         </date>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="add_year_comboBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>2012</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2011</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2010</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2009</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2008</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2007</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2006</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2005</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2004</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2003</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2002</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2001</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1999</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1998</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1997</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1996</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1995</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1994</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1993</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1992</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1991</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1990</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Visualization Date:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="add_cast_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>190</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add Cast</string>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="add_cast_textEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>321</width>
+          <height>91</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="add_plot_textEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>340</y>
+          <width>321</width>
+          <height>91</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>320</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Plot</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>10</y>
+        <width>20</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>350</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>File Name:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="add_image_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>370</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_image_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>594</x>
+        <y>370</y>
+        <width>41</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="add_image_label">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>10</y>
+        <width>271</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_save_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>420</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_reset_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>420</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reset</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Edit Movies</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>341</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>339</width>
+         <height>439</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>46</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Director:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>46</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Year:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>46</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Title:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="edit_director_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>321</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="edit_title_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>321</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="edit_duration_lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>130</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>110</y>
+          <width>46</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Duration:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>110</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>IMDB Rating:</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="edit_rating_doubleSpinBox">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>130</y>
+          <width>71</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="decimals">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <double>10.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+        <property name="value">
+         <double>5.000000000000000</double>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="edit_visualization_dateEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>190</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="date">
+         <date>
+          <year>2012</year>
+          <month>1</month>
+          <day>1</day>
+         </date>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="edit_year_comboBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>2012</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2011</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2010</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2009</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2008</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2007</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2006</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2005</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2004</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2003</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2002</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2001</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1999</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1998</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1997</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1996</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1995</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1994</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1993</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1992</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1991</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1990</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Visualization Date:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="edit_cast_pushButton">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>190</y>
+          <width>161</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Add Cast</string>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="edit_cast_textEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>321</width>
+          <height>91</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="edit_plot_textEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>340</y>
+          <width>321</width>
+          <height>91</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>320</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Plot</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="edit_image_label">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>10</y>
+        <width>271</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>10</y>
+        <width>20</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="edit_save_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>400</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="edit_image_lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>370</y>
+        <width>221</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>350</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>File Name:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="edit_image_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>594</x>
+        <y>370</y>
+        <width>41</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="edit_reset_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>400</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Reset</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="edit_remove_pushButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>400</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="edit_next_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>516</x>
+        <y>430</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="edit_previous_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>430</y>
+        <width>131</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Previous</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>View Movies</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>321</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>319</width>
+         <height>439</height>
+        </rect>
+       </property>
+       <widget class="QLabel" name="view_director_label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>301</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Director:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="view_year_label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Year:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="view_title_label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>301</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Title:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="view_duration_label">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>50</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Duration:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="view_rating_label">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>50</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>IMDB Rating:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="view_visualization_label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>301</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Visualization Date:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="view_plot_label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Plot:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="view_cast_label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>321</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Cast:</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="view_plot_textBrowser">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>301</width>
+          <height>101</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="view_cast_textBrowser">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>240</y>
+          <width>301</width>
+          <height>191</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>10</y>
+        <width>20</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="view_image_label">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>10</y>
+        <width>291</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="view_next_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>430</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="view_previous_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>354</x>
+        <y>430</y>
+        <width>131</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Previous</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>669</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionRe_Order"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuPrint">
+    <property name="title">
+     <string>Print</string>
+    </property>
+    <addaction name="actionPrint_This"/>
+    <addaction name="add_actionPrint_All"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuPrint"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionPrint_This">
+   <property name="text">
+    <string>Print This</string>
+   </property>
+  </action>
+  <action name="add_actionPrint_All">
+   <property name="text">
+    <string>Print All</string>
+   </property>
+  </action>
+  <action name="add_actionSave_PDF">
+   <property name="text">
+    <string>Save PDF</string>
+   </property>
+  </action>
+  <action name="actionRe_Order">
+   <property name="text">
+    <string>Re-Order</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="movietickets.qrc"/>
+ </resources>
+ <connections/>
+</ui>
